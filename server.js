@@ -6,7 +6,6 @@ const port = process.env.PORT
 
 const connectDB = require('./config/db')
 
-const { listen } = require('express/lib/application');
 
 connectDB()
 
