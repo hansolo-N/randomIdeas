@@ -4,7 +4,8 @@
   "description": "idea sharing application",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "nodemon": "nodemon server.js"
   },
   "author": "nasr hanslo",
   "license": "MIT",
