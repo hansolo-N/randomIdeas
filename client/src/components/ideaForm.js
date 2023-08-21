@@ -1,7 +1,30 @@
 class IdeaForm{
     constructor(){
         this.formModal = document.getElementById("form-modal");
+        
     }
+
+    addEventListeners(){
+        this.form.addEventListener('submit',this.handleSubmit.bind(this))
+    }
+
+    handleSubmit(e){
+        e.preventDefault()
+        
+
+        const idea = {
+            text:this.form.elements.text.value,
+            tag:this.form.elements.tag.value,
+            username:this.form.elements.username.value,
+        }
+        console.log(idea)
+
+        this.form.elements.text.value = ''
+        this.form.elements.tag.value =''
+        this.form.elements.username.value= ''
+        document.dispatchEvent("closemodal")
+    }
+
 
     render(){
         this.formModal.innerHTML = ` <form id="idea-form">
@@ -21,10 +44,12 @@ class IdeaForm{
         </div>
         <button class="btn" type="submit" id="submit">Submit</button>
       </form>`
-
-
+      this.form = document.getElementById("idea-form")
+      this.addEventListeners();
 
 
 
     }
 }
+
+export default IdeaForm;
