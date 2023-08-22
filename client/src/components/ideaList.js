@@ -35,7 +35,10 @@ class IdeaList{
       }
     }
 
-
+    addideaToList(idea){
+      this.ideas.push(idea)
+      this.render()
+  }
 
 
     getTagClass(tag){
