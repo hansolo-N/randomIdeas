@@ -5,11 +5,11 @@ import IdeaList from './components/ideaList';
 import './CSS/style.css';
 
 
-const modal = new Modal();
+new Modal();
 
-const formModal = new  IdeaForm()
+const ideaForm = new  IdeaForm()
 
-const ideaList = new IdeaList()
+ new IdeaList()
 
 
-formModal.render()
+ideaForm.render()
