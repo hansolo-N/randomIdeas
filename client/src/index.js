@@ -11,6 +11,5 @@ const formModal = new  IdeaForm()
 
 const ideaList = new IdeaList()
 
-ideaList.render()
 
 formModal.render()
