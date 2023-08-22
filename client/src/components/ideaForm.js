@@ -72,5 +72,6 @@ class IdeaForm {
     this.addEventListeners();
   }
 }
+//updated
 
 export default IdeaForm;
